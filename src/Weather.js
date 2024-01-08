@@ -6,7 +6,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weather, setWeather] = useState({});
-  const [ready, setReady] = useState(false)
+  const [ready, setReady] = useState(false);
 
   function showWeather(response) {
     console.log(response.data);
@@ -42,15 +42,25 @@ export default function Weather(props) {
   if (ready) {
     return (
       <div className="Weather">
-        <form onSubmit={handleSubmit}>
-            <div className="row">
-                <div className="col-9">
-                    <input type="search" onChange={updateCity} placeholder="Type a city" className="form-control" autoFocus="on" />
-                </div>
-                <div className="col-3">
-                    <input type="submit" value="Search" className="btn btn-primary w-100"/>
-                </div>
+        <form onSubmit={handleSubmit} className="mb-3">
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                onChange={updateCity}
+                placeholder="Type a city"
+                className="form-control"
+                autoFocus="on"
+              />
             </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
+            </div>
+          </div>
         </form>
         <WeatherInfo data={weather} />
       </div>
