@@ -1,5 +1,6 @@
 body {
-    background: radial-gradient(#800080, #4b0082);
+    background: linear-gradient(135deg, #00feba, #5b548a);
+   
   }
   
   .Weather {
