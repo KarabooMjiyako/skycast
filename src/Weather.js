@@ -44,7 +44,7 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit} className="mb-3">
           <div className="row">
-            <div className="col-9">
+            <div className="col-8">
               <input
                 type="search"
                 onChange={updateCity}
@@ -53,7 +53,7 @@ export default function Weather(props) {
                 autoFocus="on"
               />
             </div>
-            <div className="col-3">
+            <div className="col-4">
               <input
                 type="submit"
                 value="Search"
