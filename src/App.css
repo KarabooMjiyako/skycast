@@ -1,3 +1,7 @@
+bpdy{
+  background: linear-gradient(125deg,#00feba, #5b548a);
+  height: 100vh;
+}
 .App{
   max-width: 650px;
   margin: 30px auto;
