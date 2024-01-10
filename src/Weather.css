@@ -48,7 +48,6 @@ body {
 
 .form-control::placeholder {
   color: #fff;
-  text-transform: capitalize;
 }
 
 .btn {
