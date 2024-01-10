@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -18,6 +19,7 @@ export default function Weather(props) {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
       city: response.data.name,
+      coordinates: response.data.coord,
     });
 
     setReady(true);
@@ -47,6 +49,7 @@ export default function Weather(props) {
             <div className="col-8">
               <input
                 type="search"
+                id="search"
                 onChange={updateCity}
                 placeholder="Type a city"
                 className="form-control"
@@ -63,6 +66,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weather} />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
