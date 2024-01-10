@@ -3,7 +3,8 @@
 }
 .WeatherForecast-temperatures {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 .WeatherForecast-temperature-max {
   display: inline-block;
@@ -12,3 +13,4 @@
   opacity: 0.6;
   margin-left: 5px;
 }
+
