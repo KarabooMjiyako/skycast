@@ -1,15 +1,14 @@
-
-.WeatherForecast{
-    text-align: center;
+.WeatherForecast {
+  text-align: center;
 }
-.WeatherForecast-temperatures{
-    display: flex;
-    align-items: center;
+.WeatherForecast-temperatures {
+  display: flex;
+  align-items: center;
 }
-.WeatherForecast-temperature-max{
-    display: inline-block;
+.WeatherForecast-temperature-max {
+  display: inline-block;
 }
-.WeatherForecast-temperature-min{
-    opacity: 0.6;
-    margin-left: 5px;
+.WeatherForecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
 }
