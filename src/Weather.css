@@ -75,6 +75,10 @@ body {
   margin-right: 10px;
 }
 
+hr{
+  color: #5b548a;
+}
+
 .Weather .temperature {
   font-weight: 400;
   font-weight: bold;
