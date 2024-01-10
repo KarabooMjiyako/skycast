@@ -30,7 +30,7 @@ export default function WeatherForecast(props){
     if (loaded){
         <div className="WeatherForecast">
         <div className="row">
-            {forecast.map(function(dailyForecast, index){
+            {forecast.map((dailyForecast, index) => {
             if (index < 5){
              return(
              <div className="col" key={index} >
